@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   // For Vite:
-  baseURL: import.meta.env.VITE_API_URL ?? 'http://localhost:8000/api/', // <-- adjust to your backend
+  baseURL: import.meta.env.VITE_API_URL ?? 'blog-backend-production-64e5.up.railway.app/api/', // <-- adjust to your backend
 });
 
 api.interceptors.request.use((config) => {
