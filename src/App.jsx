@@ -9,7 +9,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* optional: send / to /posts */}
-        <Route path="/" element={<Navigate to="/posts" replace />} />
+        <Route path="/" element={<Navigate to="/register/" replace />} />
         <Route path="/posts" element={<Post />} />
         <Route path="/posts/:id/" element={<PostDetail />} />
         <Route path="/register/" element={<Registration />} />
